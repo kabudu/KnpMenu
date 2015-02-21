@@ -8,7 +8,7 @@ class PimpleProvider implements RendererProviderInterface
     private $rendererIds;
     private $defaultRenderer;
 
-    public function __construct(\Pimple $pimple, $defaultRenderer, array $rendererIds)
+    public function __construct($pimple, $defaultRenderer, array $rendererIds)
     {
         $this->pimple = $pimple;
         $this->rendererIds = $rendererIds;

@@ -7,7 +7,7 @@ class PimpleProvider implements MenuProviderInterface
     private $pimple;
     private $menuIds;
 
-    public function __construct(\Pimple $pimple, array $menuIds = array())
+    public function __construct($pimple, array $menuIds = array())
     {
         $this->pimple = $pimple;
         $this->menuIds = $menuIds;
